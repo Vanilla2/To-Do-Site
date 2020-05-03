@@ -1,0 +1,130 @@
+.wrapper{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+txt{
+    cursor: default;
+}
+.empty{
+    opacity: 0;
+    margin-top: 30%;
+    animation-name: show;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; 
+}
+.h4{
+    font-weight: 700;
+    font-size: 25px;
+}
+.h5{
+    font-size: 20px;
+}
+.empty p{
+    text-align: center;
+}
+.left *, .right *{
+    transition: color 0.5s, 0.5s font-size;
+}
+.list-el:hover .left *, .list-el:hover .right *{
+    color:red;
+    font-size: 25px;
+}
+.list-el *{
+    opacity: 0;
+    animation-name: show;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+}
+.input-box *{
+    opacity: 0;
+    animation-name: show;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; 
+}
+@keyframes show{
+    to{
+        opacity: 100;
+    }
+}
+.list-el{
+    margin-top: 10px;
+}
+.to-do-text{
+    font-size: 20px;
+}
+.del-i{
+    cursor: pointer;
+    font-size: 20px;
+}
+.list{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    border: 1px solid rgb(194, 194, 194);
+    border-bottom: 0;
+    border-radius: 10px 10px 0 0;
+    width: 40%;
+    max-width: 570px;
+    height: 100px;
+    background: rgb(0,41,250);
+    background: radial-gradient(circle, rgba(0,41,250,1) 0%, rgba(0,255,149,1) 100%);
+}
+button:focus, input:focus{
+    outline:none !important;
+}
+.add{
+    background-color: transparent;
+    border:0;
+    font-size: 30px;
+    color: green;
+    margin-left: 15%;
+}
+.input-box{
+    display: flex;
+    height: 35px;
+    width: 40%;
+    max-width: 570px;
+    border: 1px solid rgb(194, 194, 194);
+    border-top: 0;
+    padding-bottom: 5px;
+    border-radius: 0 0 10px 10px;
+}
+.input{
+    border: 1px solid #4D5CF0;
+    width: 60%;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.list-div{
+    overflow: auto;
+    width: 40%;
+    max-width: 570px;
+    height: 550px;
+    border: 1px solid rgb(194, 194, 194);
+    border-bottom: 0;
+}
+.header-text{
+    /* text-align: center; */
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+.left { 
+    float: left; 
+    width: 92%;
+    /* background-color: green;  */
+} 
+.right { 
+    width: 100%; 
+    /* background-color: blue;  */
+} 
+
+body{
+    font-family: 'Work Sans', sans-serif !important;
+}
